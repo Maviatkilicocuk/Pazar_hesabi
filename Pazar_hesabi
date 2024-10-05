@@ -1,0 +1,35 @@
+package Giris;
+import java.util.Scanner;
+public class Pazar_Hesabi {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        double armut, elma, domates, muz, patlican, bogurtlen, Toplam_odenen;
+
+        System.out.print(" Kaç kilo armut aldınız? ");
+        armut = input.nextDouble();
+
+        System.out.print(" Kaç kilo elma aldınız? ");
+        elma = input.nextDouble();
+
+        System.out.print(" Kaç kilo domates aldınız? ");
+        domates = input.nextDouble();
+
+        System.out.print(" Kaç kilo muz aldınız? ");
+        muz = input.nextDouble();
+
+        System.out.print(" Kaç kilo patlıcan aldınız? ");
+        patlican = input.nextDouble();
+
+        System.out.print(" KAç kilo bogurtlen aldınız? ");
+        bogurtlen = input.nextDouble();
+
+        Toplam_odenen = (elma*3.67) + (armut*2.14) + (domates*3.43) + (muz*12.0) + (patlican*5.0) + (bogurtlen*13.6);
+
+                System.out.print(" Toplam ödemeniz TL = " +Toplam_odenen);
+
+
+    }
+
+}
